@@ -44,7 +44,7 @@ let services = appEnv.services;
 let mongodb_services = services["compose-for-mongodb"];
 
 // This check ensures there is a services for MongoDB databases
-assert(!util.isUndefined(mongodb_services), "App must be bound to compose-for-mongodb service");
+//assert(!util.isUndefined(mongodb_services), "App must be bound to compose-for-mongodb service");
 
 // We now take the first bound MongoDB service and extract it's credentials object
 let credentials = mongodb_services[0].credentials;
